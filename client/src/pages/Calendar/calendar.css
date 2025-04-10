@@ -1,0 +1,107 @@
+.calendar-main{
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+    url(/images/background/prueba1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.calendar {
+  min-height: 900px;
+}
+
+/* ESTILOS BUENOS */
+.rbc-day-bg {
+  background-color: #ffffff;
+}
+
+.rbc-off-range-bg {
+  background-color: #e7e7e7;
+}
+
+.rbc-today {
+  background-color: #eaf6ff;
+}
+
+.rbc-btn-group button{
+  background-color: #ffffff;
+}
+
+.rbc-month-header {
+  background-color: #ffffff;
+}
+
+/* Estilos base alternados para los eventos */
+.rbc-row-content .rbc-row:nth-child(odd) .rbc-event {
+  background-color: #dd9211;
+}
+
+.rbc-row-content .rbc-row:nth-child(even) .rbc-event {
+  background-color: #021330;
+}
+
+/* Estilos específicos según el estado del evento */
+.rbc-row-content .rbc-row .rbc-event:has(span.upcoming), p.upcoming {
+  background-color: #075ba4; /* Gris para próximos */
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.active), p.active {
+  background-color: #28a745; /* Verde para activos */
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.closed), p.closed {
+  background-color: #494949; /* Azul para cerrados */
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.cancelled), p.cancelled {
+  background-color: brown; /* Marrón para cancelados */
+  text-decoration: line-through;
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.finished), p.finished {
+  background-color: #b84d05; /* Morado para finalizados */
+  opacity: 0.8;
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.unknown), p.unknown {
+  background-color: #2e5062; /* Rojo para desconocidos */
+}
+
+.modal-img-event{
+  width: 9.375rem;
+  border-radius: 0.5rem;
+}
+
+.event-status-badge{
+  color: white;
+  width: max-content;
+  padding: 0.15rem  0.3rem;
+  border-radius: 0.5rem;
+}
+
+.rbc-btn-group > button,
+.rbc-month-view,
+.rbc-time-view {
+	border-radius: 0.5rem;
+}
+
+@media(width < 576px){
+  .rbc-toolbar{
+    flex-direction: row;
+  }
+  .rbc-toolbar .rbc-toolbar-label{
+    text-align: right;
+  }
+  .calendar{
+    min-height: 550px;
+  }
+  .calendar-event{
+    display: none;
+    pointer-events: none;
+  }
+  .rbc-button-link .rbc-show-more{
+    font-size: 0.8125rem;
+  }
+}

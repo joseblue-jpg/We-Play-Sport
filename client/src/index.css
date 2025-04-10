@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*Crear codigo universal reutilizable para toda la pagina*/
+.btn-mustard{
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  background-color: rgb(249, 190, 12);
+  transition-property: filter scale;
+  transition-duration: 0.3s;
+
+  &:hover{
+    filter: brightness(0.9);
+  }
+  &:active{
+    scale: 0.9;
+  }
+}

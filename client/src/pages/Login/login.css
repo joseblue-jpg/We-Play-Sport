@@ -1,0 +1,56 @@
+.user-login-main{
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(/images/background/prueba1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+.login-form {
+  position: relative;
+  background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+  height: max-content;
+  width: 500px;
+  padding: 2.5rem 3.5rem;
+  margin-block: 6rem;
+
+  .text-underline {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+  input:focus {
+    outline: 3px solid var(--main-color-2);
+  }
+
+  label{
+    color: #FFC107;
+    font-size: 1.1rem;
+  }
+
+  .login-btn{
+    transition: outline 0.1s ease;
+  }
+
+  .login-btn:hover{
+    outline: 2px solid white;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+  color: #a3a3a3;
+  opacity: 1;
+  }
+}
+
+@media (width <= 560px){
+  .login-form{
+    width: 400px;
+    margin-block: 1.5rem;
+    margin-inline: 1rem;
+    padding-inline: 1.5rem;
+  }
+}
+

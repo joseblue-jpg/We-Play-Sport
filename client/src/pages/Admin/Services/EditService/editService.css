@@ -1,0 +1,27 @@
+.admin-edit-service-form{
+  height: 400px;
+  position: relative;
+  z-index: 2;
+
+  Button:hover{
+    outline: 1px solid rgb(255, 255, 255);
+  }
+
+  .btn-1{
+    background-color: var(--main-color-2);
+  }
+
+  .btn-2{
+    background-color: rgb(133, 133, 133);
+  }
+
+  label{
+    width: 300px;
+  }
+
+  input{
+    width: 300px;
+  }
+
+
+}

@@ -1,0 +1,33 @@
+.admin-edit-user-main{
+  background-color: rgb(207, 207, 207);
+  min-height: 100vh;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),
+  url(/images/background/admin-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .admin-edit-user-form{
+    background: linear-gradient(to bottom, #0A3D6E, #0D5191, #0F5EA8);
+    height: max-content;
+    width: 600px;
+    padding: 2rem 3.5rem;
+    input:focus {
+      outline: 3px solid #FFC107;
+    }
+    label{
+      color: #FFC107;
+      font-size: 1.1rem;
+    }
+    input::placeholder,
+    textarea::placeholder {
+    color: #A3A3A3;
+    opacity: 1;
+    }
+  }
+  @media(width <= 860px){
+    .admin-edit-user-form{
+      width: 400px;
+    }
+  }
+}

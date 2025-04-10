@@ -1,0 +1,32 @@
+.adminService-card {
+    width: 300px;
+    margin: .2rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+    overflow: hidden;
+    z-index: 2;
+
+    h3{
+      margin: 0;
+      font-size: 1.5rem;
+      height: max-content;
+    }
+}
+
+.adminService-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.adminServiceCard-texts {
+    background-color: rgb(218, 218, 218);
+}
+
+.adminServiceCard-btn{
+  background-color: rgb(143, 143, 143);
+}
+
+.adminServiceCard-delete-btn{
+  background-color: rgb(134, 0, 0);
+  color: white;
+}

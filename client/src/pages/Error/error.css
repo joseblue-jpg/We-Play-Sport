@@ -1,0 +1,24 @@
+.error-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 251px);
+
+  img{
+    width: 500px;
+  }
+
+  p{
+    font-size: 3rem;
+    color: white;
+  }
+  
+
+
+}

@@ -1,0 +1,114 @@
+.home-header-container {
+  min-height: 400px;
+  background: linear-gradient(to right, rgba(0, 62, 155, 0.97), rgba(161, 124, 1, 0.97)), url('/images/background/sports-tool.webp');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .header-info {
+    max-width: 50rem;
+    max-height: 40.75rem;
+    width: 90%;
+  
+    h1{
+      font-size: 4rem;
+
+      .sport-span{
+        color: rgb(253, 194, 0);
+        font-size: 5rem;
+      }
+    }
+  
+    p{
+      font-size: 1.2rem;
+    }
+  
+    img{
+      width: 100%;
+      max-width: 400px;
+      object-fit: contain;
+    }
+  }
+
+  .double-arrow{
+    height: 20px;
+    width: 20px;
+    transition: transform 0.2s ease;
+    position: absolute;
+    bottom: 35px;
+    margin-top: 1.5rem;
+  }
+
+  .double-arrow:hover{
+    transform: translateY(3px);
+  }
+  
+  @media (width <= 1200px) {
+    .header-info h1 {
+      font-size: 3.5rem;
+      .sport-span{
+        font-size: 4rem;
+      }
+    }
+  
+    .header-info p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (width <= 600px) {
+
+    .header-info {
+      width: 95%;
+      padding: 0.5rem;
+  
+      h1{
+        font-size: 2rem;
+
+        .sport-span{
+          font-size: 2.5rem;
+        }
+      }
+  
+      p{
+        font-size: 1rem;
+      }
+  
+      img{
+        max-width: 300px;
+      }
+    } 
+  }
+
+  .next-events {
+    background: linear-gradient(to top, #093761, #0c4780, #0d5292);
+    height: 50px;
+    width: 375px;
+    border: 1px solid var(--main-color-2);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+}
+
+.home-events-container{
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/background/prueba1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.more-events{
+  .show-more-btn {
+    padding: .5rem 1rem;
+    border: 3px solid var(--main-color-1);
+    background: var(--main-color-2);;
+  }
+  
+  .show-more-btn:hover {
+    color: white;
+    outline: none;
+  }
+}
+

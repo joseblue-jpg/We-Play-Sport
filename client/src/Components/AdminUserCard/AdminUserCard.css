@@ -1,0 +1,43 @@
+
+.adminUser-card {
+    height: 80px;
+    width: 540px;
+    background-color: #e4e4e4;
+    border: 2px solid black;
+    
+    .user-name{
+    }
+
+    h3{
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+
+
+    .adminUserCard-btn{
+        background-color: white;
+        color: rgb(94, 94, 94);
+        border: none;
+    }
+
+    .info{
+        background-color: rgb(197, 34, 34);
+        color: black;
+    }
+
+    .delete{
+        background-color: rgb(131, 0, 0);
+        color: white;
+    }
+
+}
+
+.adminUserCard-btn:hover{
+    outline: none;
+}
+
+@media (width <= 660px){
+    .adminUser-card{
+        width: 400px;
+    }
+}

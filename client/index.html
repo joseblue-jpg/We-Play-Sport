@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <!-- Favicon predeterminado (estilo claro) -->
+    <link
+      id="favicon"
+      rel="icon"
+      href="images/logo/wePlaySportFavIcon.png"
+      type="image/png"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WePlay Sports</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const favicon = document.getElementById("favicon");
+
+      function updateFavicon() {
+        if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+          // Favicon para modo oscuro
+          favicon.setAttribute(
+            "href",
+            "images/logo/wePlaySportFavIcon.png"
+          );
+        } else {
+          // Favicon para modo claro
+          favicon.setAttribute(
+            "href",
+            "images/logo/wePlaySportFavIcon.png"
+          );
+        }
+      }
+
+      updateFavicon();
+
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", updateFavicon);
+    </script>
+  </body>
+</html>

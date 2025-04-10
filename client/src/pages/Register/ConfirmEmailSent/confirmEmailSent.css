@@ -1,0 +1,54 @@
+.confirm-email-sent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(/images/background/prueba1.jpg);
+  padding-left: 0;
+  padding-right: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 200px);
+
+  .message-div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    margin-top: 5rem;
+    width: 600px;
+    height: max-content;
+    background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+    border-radius: 1rem;
+    color: #FFC107;
+    margin-bottom: 20rem;
+
+    p{
+      font-size: 1.2rem;
+    }
+
+    Button{
+      background-color: #FFC107;
+      border: none;
+      width: 150px;
+    }
+  }
+
+  @media(width <= 664px){
+    .message-div{
+      width: 300px;
+
+      h2{
+        font-size: 1.5rem;
+      }
+  
+      p{
+        font-size: 1rem;
+      }
+    } 
+  }
+}

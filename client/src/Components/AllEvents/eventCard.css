@@ -1,0 +1,74 @@
+.event-card{
+    box-shadow: none;
+    transition: transform 0.3s ease;
+    width: 22.5rem;
+
+    .event-img{
+      height: 250px;
+      transition: object-position 0.5s ease;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    .event-body {
+      height: 200px;
+      padding: 1rem;
+    }
+    .event-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    p {
+      color: #ffffff;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &:hover .event-img {
+      object-position: right;
+    }
+  }
+
+  .event-status {
+    text-align: center;
+  }
+
+  .btn-more-info {
+    background-color: var(--main-color-2);
+    color: black;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .btn-more-info:hover {
+    background-color: var(--main-color-2);
+    color: black;
+  }
+  
+  /* Estilos específicos para los diferentes estados del evento */
+  .btn-blue {
+    background-color: #ffffff;
+    color: rgb(0, 89, 255);
+  }
+  
+  .btn-green {
+    background-color: #ffffff;
+    color: rgb(0, 192, 0);
+  }
+  
+  .btn-gray {
+    background-color: #ffffff;
+    color: rgb(150, 150, 150);
+  }
+  
+  .btn-red {
+    background-color: #ffffff;
+    color: rgb(201, 0, 0);
+  }
+  
+  .btn-yellow {
+    background-color: #ffffff;
+    color: rgb(157, 96, 5);
+  }
+  

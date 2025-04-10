@@ -1,0 +1,54 @@
+.admin-user-panel {
+    background-color: rgb(207, 207, 207);
+    min-height: 100vh;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), 
+    url(/images/background/admin-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .title{
+        background-color: #09345c;
+        color: var(--main-color-2);
+        font-size: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        height: 60px;
+        width: 440px;
+    }
+
+    .back-btn{
+        width: 100px;
+        height: 60px;
+        background-color: #AAAAAA;
+    }
+
+    .adminEvent-form{
+      background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+      width: 400px;
+      border: 1px solid white;
+    }
+
+    button{
+      background-color: var(--main-color-2); 
+  }
+}
+
+@media (width <= 660px){
+
+  .admin-user-panel{
+    .title{
+      width: 300px;
+      font-size: 1rem;
+      border-start-start-radius: 0;
+      border-end-start-radius: 0;
+    }
+
+    .back-btn{
+      width: 100px;
+      font-size: .8rem;
+    }
+
+  }
+
+}

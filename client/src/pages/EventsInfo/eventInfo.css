@@ -1,0 +1,105 @@
+.background{
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), 
+    url(/images/background/prueba1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.event-info-main{
+  min-height: 100vh;
+  
+  .event-img{
+    width: 100%;
+    background: linear-gradient(to top, #093761, #0c4780, #0d5292);
+    overflow: hidden;
+
+    img{
+      width: 600px;
+      max-height: 500px;
+      object-fit: contain;
+    }
+  }
+
+  .price{
+    background-color: orange;
+  }
+
+  h2{
+    background: linear-gradient(to top, #093761, #0c4780, #0d5292);
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  button{
+    background-color: rgb(255, 115, 0);
+  }
+
+  button:hover{
+    color: white;
+    outline: none;
+    scale: 1.05;
+  }
+
+  .info-main-div{
+    width: 100%;
+    
+    .info-div{
+      width: 50%;
+      background-color: white;
+      box-shadow: 0 0 1px 1px rgb(206, 206, 206);
+      overflow: hidden;
+    }
+  }
+
+  @media(width <= 660px){
+    .info-main-div{
+      flex-direction: column;
+
+      .info-div{
+        width: 100%;
+      }
+    }
+  }
+
+  .info-div-2{
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 0 1px 1px rgb(206, 206, 206);
+    overflow: hidden;
+  }
+
+  .info-title{
+    background: linear-gradient(to top, #093761, #0c4780, #0d5292);
+    color: white;
+  }
+
+  .ubication{
+    iframe{
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+    }
+  }
+
+  .back-btn{
+    background-color: gray;
+  }
+
+  .back-btn:hover{
+    background-color: rgb(0, 122, 223);
+  }
+
+  
+
+  
+}
+
+
+
+
+
+
+
+

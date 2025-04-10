@@ -1,0 +1,79 @@
+.main-navbar-tool {
+  background: linear-gradient(to right, #093761, #0c4780, #0d5292);
+  
+  img {
+    width: 225px;
+  }
+
+  .text-warning {
+    font-weight: bold;
+  }
+
+  .me-auto{
+    gap: .5rem;
+  }
+
+  .burger-icon {
+    background-color: var(--main-color-2);
+  }
+
+  .user-btns{
+    padding-right: 3rem;
+  }
+
+  .user-photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--main-color-2);
+    transition: scale 0.1s ease;
+  }
+
+  .close-session{
+    width: 20px;
+    height: 20px;
+    margin-right: .5rem;
+  }
+
+  .btn-nav {
+    color: var(--main-color-2);
+    font-weight: bold;
+  }
+
+  .btn-nav:hover {
+    color: white;
+  }
+
+  .wePlay-logo{
+    transition: scale 0.2s ease;
+  }
+
+  .wePlay-logo:hover{
+    scale: 1.05;
+  }
+
+  .user-photo:hover{
+    scale: 1.05;
+    border: 2px solid white;
+  }
+
+  /* Estilo para los hover en pantallas pequeñas */
+  @media (max-width: 993px) {
+
+    .logo-container {
+    margin-inline: auto;
+    padding-left: 3rem;
+  }
+
+    .me-auto{
+      gap: 0;
+    }
+
+    .user-btns{
+      padding-right: 0;
+    }
+  }
+
+}
+

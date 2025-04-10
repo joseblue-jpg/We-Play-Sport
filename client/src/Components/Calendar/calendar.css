@@ -1,0 +1,39 @@
+.calendar {
+  min-height: 900px;
+}
+
+/* Estilos base alternados para los eventos */
+.rbc-row-content .rbc-row:nth-child(odd) .rbc-event{
+  background-color: #dd9211;
+}
+
+.rbc-row-content .rbc-row:nth-child(even) .rbc-event {
+  background-color: #021330;
+}
+
+/* Estilos específicos según el estado del evento */
+.rbc-row-content .rbc-row .rbc-event:has(span.upcoming) {
+  background-color: #075ba4; /* Gris para próximos */
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.active) {
+  background-color: #28a745; /* Verde para activos */
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.closed) {
+  background-color: #494949; /* Azul para cerrados */
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.cancelled) {
+  background-color: brown; /* Marrón para cancelados */
+  text-decoration: line-through;
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.finished) {
+  background-color: #b84d05; /* Morado para finalizados */
+  opacity: 0.8;
+}
+
+.rbc-row-content .rbc-row .rbc-event:has(span.unknown) {
+  background-color: #2e5062; /* Rojo para desconocidos */
+}

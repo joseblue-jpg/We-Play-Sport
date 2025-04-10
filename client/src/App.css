@@ -1,0 +1,25 @@
+:root {
+  --main-color-1: #0056a9;
+  --main-color-2: #FFC107;
+}
+
+.main-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@font-face {
+  font-family: 'Sensation';
+  src: url('/fonts/sansation/Sansation_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Sensation', sans-serif;
+}
+
+.msg-error{
+  font-size: 15px;
+  color: rgb(255, 58, 58);
+}

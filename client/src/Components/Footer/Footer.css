@@ -1,0 +1,15 @@
+footer{
+  background: linear-gradient(to right, #002242, #002c55, #003a70);
+
+  .logo{
+    width: 12rem;
+  }
+  
+  @media (width <= 500px) {
+    .copyright {
+      font-size: .8rem;
+    }
+  }
+}
+
+

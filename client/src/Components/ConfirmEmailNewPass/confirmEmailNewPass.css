@@ -1,0 +1,52 @@
+.confirm-newPass-main{
+  display: flex;
+  justify-content: center;
+  background-image: url(/images/background/prueba1.jpg);
+  padding-left: 0;
+  padding-right: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+
+  .verified-msg{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+    margin-top: 20rem;
+    width: max-content;
+    height: max-content;
+    background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+    border-radius: 1rem;
+    color: #FFC107;
+    z-index: 2;
+
+    Button{
+      background-color: #FFC107;
+      border: none;
+      width: 150px;
+      color: black;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.confirm-newPass-main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.navbar,
+.footer {
+  position: relative;
+  z-index: 3;
+}

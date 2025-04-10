@@ -1,0 +1,36 @@
+.confirm-register-main{
+  display: flex;
+  justify-content: center;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(/images/background/prueba1.jpg);
+  padding-left: 0;
+  padding-right: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+
+  .verified-msg{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 1.5rem;
+    margin-top: 20rem;
+    width: 400px;
+    height: max-content;
+    background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+    border-radius: 1rem;
+    color: #FFC107;
+
+    Button{
+      background-color: #FFC107;
+      border: none;
+      width: 150px;
+      color: black;
+      margin-top: 1rem;
+    }
+  }
+}

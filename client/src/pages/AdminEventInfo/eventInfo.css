@@ -1,0 +1,26 @@
+.event-info-main{
+  
+  min-height: calc(100vh - 262px);
+}
+
+.event-info-container{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.container-left{
+  width: 40%;
+  height: 100%;
+
+  img{
+    object-fit: cover;
+    width: 500px;
+  }
+
+
+}
+
+.container-right{
+  width: 60%;
+  height: 100%;
+}

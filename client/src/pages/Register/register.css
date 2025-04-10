@@ -1,0 +1,49 @@
+.user-register-main{
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(/images/background/prueba1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+
+.register-form{
+  background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+  height: max-content;
+  width: 500px;
+  padding: 2rem 3.5rem;
+  margin-block: 4rem;
+
+  input:focus {
+    outline: 3px solid #FFC107;
+  }
+
+  label{
+    color: #FFC107;
+    font-size: 1.1rem;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+  color: #a3a3a3;
+  opacity: 1;
+  }
+
+}
+
+.navbar,
+.footer {
+  position: relative;
+  z-index: 3;
+}
+
+@media (width <= 560px){
+
+  .register-form{
+    width: 400px;
+    margin-block: 1.5rem;
+    margin-inline: 1rem;
+    padding-inline: 1.5rem;
+  }
+}

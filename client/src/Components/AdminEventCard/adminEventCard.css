@@ -1,0 +1,55 @@
+.event-card{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 22.5rem;
+
+  .event-img{
+    height: 300px;
+  }
+
+  .event-body {
+    height: 200px;
+    padding: 1rem;
+    background: linear-gradient(to top, #093761, #0c4780, #0d5292);
+  }
+  .event-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  .event-text p {
+    color: #ffffff;
+    font-size: 1rem;
+  }
+}
+
+.event-status {
+  text-align: center;
+}
+
+
+/* Estilos específicos para los diferentes estados del evento */
+.btn-blue {
+  background-color: #ffffff;
+  color: rgb(0, 89, 255);
+}
+
+.btn-green {
+  background-color: #ffffff;
+  color: rgb(0, 192, 0);
+}
+
+.btn-gray {
+  background-color: #ffffff;
+  color: rgb(150, 150, 150);
+}
+
+.btn-red {
+  background-color: #ffffff;
+  color: rgb(201, 0, 0);
+}
+
+.btn-yellow {
+  background-color: #ffffff;
+  color: yellow;
+}

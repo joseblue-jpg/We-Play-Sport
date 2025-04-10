@@ -1,0 +1,92 @@
+.nav-all-events-container{
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/images/background/prueba1.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .all-event-title{
+    width: 400px;
+    padding: .5rem 0;
+    color: var(--main-color-2);
+    border-inline: 2px solid var(--main-color-2);
+    border-bottom: 2px solid var(--main-color-2);
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 2rem;
+    background: linear-gradient(to top, #093761, #0c4780, #0d5292);
+  }
+
+  @media(width <= 660px){
+    .all-event-title{
+      width: 350px;
+    }
+  }
+
+  .search-btn{
+    background-color: var(--main-color-2);
+    border-end-start-radius: 1rem;
+    border-end-end-radius: 1rem;
+
+    img{
+      width: 20px;
+      height: 20px;
+    }
+
+    button:hover{
+      outline: none;
+    }
+  }  
+}
+
+.event-search-modal{
+
+  margin-top: 9rem;
+  .events-search-modal-header{
+    background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+  }
+
+  .modal-content {
+    border-radius: 1.5rem;
+    overflow-y: hidden;
+  }
+
+  .events-searcher{
+    background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+    width: 22rem;
+  
+    button{
+      background-color: var(--main-color-2);
+    }
+  
+    input{
+      padding: .3rem;
+      border-radius: .2rem;
+      border: none;
+    }
+  
+    input:focus {
+      outline: 2px solid var(--main-color-2);
+    }
+  
+    select{
+      text-align: center;
+    }
+  }
+
+}
+
+.all-events-more-events{
+
+  .show-more-btn {
+    width: 350px;
+    padding: 1rem 0;
+    border: none;
+    background-color: var(--main-color-2);
+  }
+  
+  .show-more:hover {
+    background-color: var(--main-color-2);
+    outline: 2px solid black;
+  }
+}
+  
+  

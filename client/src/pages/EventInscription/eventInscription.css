@@ -1,0 +1,76 @@
+.inscriptionForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  border-radius: 1rem;
+}
+@media(width <= 600px){
+  .inscriptionForm {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+.event-inscription-main{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5)), url(/images/background/prueba1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 2rem; */
+}
+
+.team-form{
+  background: linear-gradient(to bottom, #0A3D6E, #0d5191, #0f5ea8);
+  height: max-content;
+  width: max-content;
+  padding: 2rem 3.5rem;
+  margin-block: 2rem;
+  z-index: 2;
+
+  input:focus {
+    outline: 3px solid #FFC107;
+  }
+
+  label{
+    color: #FFC107;
+    font-size: 1.1rem;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+  color: #a3a3a3;
+  opacity: 1;
+  }
+}
+
+.navbar,
+.footer {
+  position: relative;
+  z-index: 3;
+}
+
+.imgInscriptionEvent {
+  object-fit: fill;
+  /* width: 100%; */
+  max-width: 31.25rem;
+  max-height: 31.25rem;
+  border-radius: 0.5rem;
+}
+
+.button-event-inscription{
+  background-color: #FFC107;
+  border: none;
+  width: 150px;
+  color: black;
+  margin-top: 1rem;
+}
